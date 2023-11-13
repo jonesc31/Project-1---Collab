@@ -1,20 +1,10 @@
 ## Project 1: Financial Analysis
 
-### Helpful Links
-
-*Yahoo finance [https://finance.yahoo.com] - provided stock data
-
-*Py Portfolio Opt [https://pyportfolioopt.readthedocs.io/en/latest/] - provides portfolio optimization.
-
-*HV Plot [https://hvplot.holoviz.org] - provides high level plotting.
-
-*Matplotlib[https://matplotlib.org] - provides interactive visualization. 
-
-*Pandas[https://pandas.pydata.org] - provides open source data and allows for data manipulation.
-
-*Numpy[https://numpy.org] - provides scientific computing.
-
---------
+</details>
+<summary>**What is your Portfolios Proposal?**</summary>
+Our project is to build an optimal portfolio by analyzing historical data from stocks 
+and comparing it to SPY(a benchmark portfolio) and an equal weight portfolio.
+We will determine which portfolio performs the best by evaluating Returns and Sharpe Ratios and will also examine the ideal portfolio for each asset by minimizing risks and maximizing profits. 
 
 **##QUESTIONS**
 
@@ -32,12 +22,6 @@ Yahoo Finance is a library that is able to provided current and historical stock
 
 **prices = pd.DataFrame(stock_data["Adj Close"].dropna(how="all"))
 
-
-</details>
-<summary>**What is your Portfolios Proposal?**</summary>
-Our project is to build an optimal portfolio by analyzing historical data from stocks 
-and comparing it to SPY(a benchmark portfolio) and an equal weight portfolio.
-We will determine which portfolio performs the best by evaluating Returns and Sharpe Ratios and will also examine the ideal portfolio for each asset by minimizing risks and maximizing profits. 
 
 **combined_df = pd.concat([cumulative_profit_ef,cumulative_profit_ew,cumulative_profit_spy], axis='columns', join='inner')
 combined_df.columns = ["Optimized", "Equal Weight","SPY"]
@@ -100,3 +84,17 @@ Sharpe Ratio: 1.43
 
 <details>
 <summary>**Portfolio Findings**</summary>
+
+### Helpful Links
+
+*Yahoo finance [https://finance.yahoo.com] - provided stock data
+
+*Py Portfolio Opt [https://pyportfolioopt.readthedocs.io/en/latest/] - provides portfolio optimization.
+
+*HV Plot [https://hvplot.holoviz.org] - provides high level plotting.
+
+*Matplotlib[https://matplotlib.org] - provides interactive visualization. 
+
+*Pandas[https://pandas.pydata.org] - provides open source data and allows for data manipulation.
+
+*Numpy[https://numpy.org] - provides scientific computing.
